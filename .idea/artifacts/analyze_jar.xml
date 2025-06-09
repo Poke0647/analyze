@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="analyze:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/analyze_jar</output-path>
+    <root id="archive" name="analyze.jar">
+      <element id="module-output" name="analyze" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/info/picocli/picocli/4.7.7/picocli-4.7.7.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
