@@ -5,8 +5,6 @@ import picocli.CommandLine.*;
 
 import java.io.*;
 import java.time.Duration;
-import java.time.Instant;
-
 
 @Command(name = "analyze", mixinStandardHelpOptions = true)
 public class Main implements Runnable {
@@ -17,6 +15,7 @@ public class Main implements Runnable {
 
     public static void main(String[] args) {
         int exitCode = new CommandLine(new Main()).execute(args);
+        System.exit(exitCode);
     }
 
     @Override

@@ -1,11 +1,7 @@
 package com.pavelisaenko;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;

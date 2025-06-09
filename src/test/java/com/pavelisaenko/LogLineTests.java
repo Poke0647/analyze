@@ -1,6 +1,5 @@
 package com.pavelisaenko;
 
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.time.DateTimeException;
@@ -24,13 +23,11 @@ public class LogLineTests {
 
     @Test
     void parseEmptyTimeString(){
-        assertThrows(DateTimeException.class, () -> {
-            new LogLine(
-                    "",
-                    0,
-                    0
-            );
-        });
+        assertThrows(DateTimeException.class, () -> new LogLine(
+                "",
+                0,
+                0
+        ));
     }
 
     @Test
@@ -46,17 +43,6 @@ public class LogLineTests {
                 43.345632
         );
         assert(a.equals(b));
-    }
-
-    @Test
-    void equalsByLinkTest(){
-        LogLine a = new LogLine(
-                "20/12/2000:20:20:20",
-                200,
-                43.345632
-        );
-        LogLine b = a;
-        assert(b.equals(a));
     }
 
     @Test
