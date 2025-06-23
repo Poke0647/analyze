@@ -38,11 +38,7 @@ public class Main implements Runnable {
 
             boolean isWindowFailedBefore;
             String inputLine;
-            LogLine logLine = new LogLine(
-                    "01/01/2001:00:00:00",
-                    200,
-                    0.1
-            );
+            LogLine logLine = new LogLine();
 
             while ((inputLine = bufferedReader.readLine()) != null) {
                 if (inputLine.isBlank()) continue;

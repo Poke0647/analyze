@@ -31,6 +31,14 @@ public class LogLine {
         );
     }
 
+    public LogLine(){
+        this(
+                "01/01/2001:00:00:00",
+                200,
+                0.1
+        );
+    }
+
     ///{@code dd/MM/yyyy:mm:mm:ss} DateTime format
     private static final DateTimeFormatter STRING_TO_INSTANT_FORMATTER =
             new DateTimeFormatterBuilder().appendPattern("dd/MM/yyyy:HH:mm:ss")
@@ -58,7 +66,6 @@ public class LogLine {
                 logLine.getStatusCode() == statusCode &&
                 logLine.getResponseTime() == responseTime;
     }
-
 
     @Override
     public int hashCode(){
