@@ -39,7 +39,9 @@ public class LogLine {
         );
     }
 
-    ///{@code dd/MM/yyyy:mm:mm:ss} DateTime format
+    /**
+     * {@code dd/MM/yyyy:mm:mm:ss} DateTime format
+     */
     private static final DateTimeFormatter STRING_TO_INSTANT_FORMATTER =
             new DateTimeFormatterBuilder().appendPattern("dd/MM/yyyy:HH:mm:ss")
                     .parseDefaulting(ChronoField.OFFSET_SECONDS, 0)
